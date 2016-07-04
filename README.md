@@ -1,4 +1,21 @@
-ud120-projects
-==============
+# ud120-projects
 
-Starter project code for students taking Udacity ud120
+My Udacity ud120 project code (intro-to-machine-learning)
+
+### Progress check list
+- [x] Naive Bayes
+- [ ] SVM (Support Vector Machines)
+- [ ] Decision Trees
+- [ ] Choose Your Own Algorithm
+- [ ] Datasets and Questions
+- [ ] Regressions
+- [ ] Outliers
+- [ ] Clustering
+- [ ] Feature Scaling
+- [ ] Text Learning
+- [ ] Feature Selection
+- [ ] PCA
+- [ ] Validation
+- [ ] Evaluation Metrics
+- [ ] Tying It All Together
+- [ ] Final Project

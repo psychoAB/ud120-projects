@@ -32,15 +32,14 @@ classifier = SVC(kernel = "linear")
 t = time()
 classifier.fit(features_train, labels_train)
 trainingTime = round(time() - t, 3)
+print "training time: ", trainingTime, "s"
 
 t = time()
 result = classifier.predict(features_test)
-predictionTime = round(time() - t, 3)
+predictionsTime = round(time() - t, 3)
+print "predictions time: ", predictionsTime, "s"
 
 accuracy = round(classifier.score(features_test, labels_test), 3)
-
-print "training time: ", trainingTime, "s"
-print "prediction time: ", predictionTime, "s"
 print "accuracy: ", accuracy
 
 #########################################################

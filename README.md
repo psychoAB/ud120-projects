@@ -5,7 +5,7 @@ My Udacity ud120 project code (intro-to-machine-learning)
 ### Progress check list
 - [x] Naive Bayes
 - [x] SVM (Support Vector Machines)
-- [ ] Decision Trees
+- [x] Decision Trees
 - [ ] Choose Your Own Algorithm
 - [ ] Datasets and Questions
 - [ ] Regressions

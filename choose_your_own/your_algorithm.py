@@ -17,6 +17,7 @@ bumpy_slow = [features_train[ii][1] for ii in range(0, len(features_train)) if l
 
 
 #### initial visualization
+"""
 plt.xlim(0.0, 1.0)
 plt.ylim(0.0, 1.0)
 plt.scatter(bumpy_fast, grade_fast, color = "b", label="fast")
@@ -25,18 +26,29 @@ plt.legend()
 plt.xlabel("bumpiness")
 plt.ylabel("grade")
 plt.show()
+"""
 ################################################################################
 
 
 ### your code here!  name your classifier object clf if you want the 
 ### visualization code (prettyPicture) to show you the decision boundary
+from sklearn.ensemble import AdaBoostClassifier
+from time import time
 
+clf = AdaBoostClassifier()
 
+t = time()
+clf.fit(features_train, labels_train)
+trainingTime = round(time() - t, 3)
+print "training time: ", trainingTime, "s"
 
+t = time()
+result = clf.predict(features_test)
+predictionsTime = round(time() - t, 3)
+print "predictions time: ", predictionsTime, "s"
 
-
-
-
+accuracy = round(clf.score(features_test, labels_test), 3)
+print "accuracy: ", accuracy
 
 try:
     prettyPicture(clf, features_test, labels_test)

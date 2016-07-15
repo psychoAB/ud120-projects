@@ -6,7 +6,7 @@ My Udacity ud120 project code (intro-to-machine-learning)
 - [x] Naive Bayes
 - [x] SVM (Support Vector Machines)
 - [x] Decision Trees
-- [ ] Choose Your Own Algorithm
+- [x] Choose Your Own Algorithm
 - [ ] Datasets and Questions
 - [ ] Regressions
 - [ ] Outliers
